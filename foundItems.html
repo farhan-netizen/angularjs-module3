@@ -1,0 +1,12 @@
+<h2>{{ title }}</h2>
+<ul class="striped">
+    <li ng-repeat="item in list">
+        <button class='btn btn-danger pull-right' 
+        ng-click='onRemove({ index: $index });'>Remove!</button>
+       <b> {{item.name}} </b> <br>
+       <p>Content: {{ item.description }}</p>
+    </li>
+</ul>
+<div class="error" ng-transclude></div>
+
+<!-- <p>{{ result }}</p> -->
